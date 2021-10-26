@@ -120,7 +120,7 @@
                         <td>{{ $data->last_name }}</td>
                         <td>{{ $data->status }}</td>
                         <td>
-                            <img src="{{ asset('assets/picture').'/'.$data->picture }}" alt="" width="80px" height="80px">
+                            <img src="{{ secure_asset('assets/picture').'/'.$data->picture }}" alt="" width="80px" height="80px">
                         </td>
                         <td>
                        <a href="{{ route('home_settings.edit',$data->id) }}">
