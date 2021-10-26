@@ -27,7 +27,7 @@ class AuthentificationController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            return redirect()->intended('index');
+            return redirect()->intended('admin/index');
         } else {
             return back()->withErrors([
                 'email' => 'Email ou mot de passe incoorect',
