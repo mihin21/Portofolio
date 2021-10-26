@@ -22,7 +22,7 @@ class HomeController extends Controller
     }
     public function index(){
 
-        $contacts = ContactSettings::all();
+        $contacts = ContactSettings::latest()->get();
         $portfolios = PortfolioSettings::all();
         $cvs = CvSettings::latest()->get();
         $experiences = FormationSettings::where('experience','on')->orderBy('created_at','DESC')->get();

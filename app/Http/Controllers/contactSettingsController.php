@@ -14,7 +14,7 @@ class contactSettingsController extends Controller
      */
     public function index()
     {
-        $contacts = ContactSettings::all();
+        $contacts = ContactSettings::latest()->get();
         return view('settings.contact.contact_settings',compact('contacts'));
     }
 
