@@ -76,7 +76,7 @@
                                @if ($cv->cv === null)
                                     <p>Aucune image</p>
                                @else
-                               <img src="assets/cv/pdf.jpg" alt="">
+                               <img src="https://mha-portfolio.herokuapp.com/assets/cv/pdf.jpg" alt="">
                                @endif
                             </td>
                             <td>
