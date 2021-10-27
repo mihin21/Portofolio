@@ -334,6 +334,7 @@ button{
     overflow-x: hidden;
     vertical-align: middle;
     transition: width 0.3s ease;
+    margin-bottom: 20px;
 }
 .link_color{
     color:var(--main-color);

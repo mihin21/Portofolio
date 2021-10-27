@@ -2,13 +2,9 @@
 @section('contenu')
 
 <div class="container-scroller">
-    <!-- partial:partials/_sidebar.html -->
    @include('layout.sidebar')
-    <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:partials/_navbar.html -->
      @include('layout.header')
-      <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
@@ -104,5 +100,4 @@
     </div>
   </div>
 </html>
-
 @endsection
