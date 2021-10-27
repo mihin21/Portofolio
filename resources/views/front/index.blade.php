@@ -47,7 +47,7 @@
                     </div>
                     <div class="home-img">
                         <div class="img-box">
-                            <img src="{{ asset('assets/Picture'.'/'.$Data->picture) }}" alt="">
+                            <img src="{{ asset('https://mha-portfolio.herokuapp.com/assets/Picture'.'/'.$Data->picture) }}" alt="">
                         </div>
                     </div>
                         @endforeach
@@ -67,7 +67,7 @@
                 @foreach ($aboutData as $Data)
                 <div class="about-img">
                     <div class="img-box">
-                        <img src="{{ asset('assets/Picture'.'/'.$Data->picture_about) }}" alt="">
+                        <img src="{{ asset('https://mha-portfolio.herokuapp.com/assets/Picture'.'/'.$Data->picture_about) }}" alt="">
                     </div>
                 </div>
                 <div class="about-text">
@@ -110,7 +110,7 @@
                             @endforeach
                         </div>
                         @foreach ($cvs as $cv )
-                        <a href="{{ asset('assets/cv').'/'.$cv->cv}}" target="_blank" class="btn">Télécharger CV</a>
+                        <a href="{{ asset('https://mha-portfolio.herokuapp.com/assets/cv').'/'.$cv->cv}}" target="_blank" class="btn">Télécharger CV</a>
                         @endforeach
                         <a href="#contact" class="btn link-item">Contacts</a>
                     </div>
@@ -128,7 +128,7 @@
                     <div class="portfolio-item">
                         @foreach ($portfolios as $portfolio)
                             <div class="portfolio-item-thumbnail">
-                                <img src="{{ asset('assets/Picture'.'/'.$portfolio->picture)}}" alt="">
+                                <img src="{{ asset('https://mha-portfolio.herokuapp.com/assets/Picture'.'/'.$portfolio->picture)}}" alt="">
                             </div>
                             <h3 class="portfolio-item-title">{{ $portfolio->project_name }}</h3>
                             <button type="button" class="btn view-project-btn">
@@ -260,5 +260,4 @@
     </div> --}}
     <script src="{{asset('front/assets/js/main.js')}}"></script>
 </body>
-
 </html>
