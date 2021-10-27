@@ -25,8 +25,8 @@ class HomeController extends Controller
         $contacts = ContactSettings::latest()->get();
         $portfolios = PortfolioSettings::all();
         $cvs = CvSettings::latest()->get();
-        $experiences = FormationSettings::where('experience','on')->orderBy('created_at','DESC')->get();
-        $formations = FormationSettings::orderBy('created_at','DESC')->get();
+        $experiences = FormationSettings::where('experience','on')->orderBy('created_at','ASC')->get();
+        $formations = FormationSettings::orderBy('created_at','ASC')->get();
         $skills = SkillSettings::all();
         $aboutData = AboutSettings::latest()->get();
         $homeData = HomeSettings::latest()->get();
