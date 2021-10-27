@@ -4,7 +4,7 @@ use App\Http\Controllers\AuthentificationController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\homeSettingsController;
 use App\Http\Controllers\aboutSettingsController;
-use App\Http\Controllers\SkillSettingsController;
+use App\Http\Controllers\skillSettingsController;
 use App\Http\Controllers\formationSettingsController;
 use App\Http\Controllers\portfolioSettingsController;
 use App\Http\Controllers\contactSettingsController;
