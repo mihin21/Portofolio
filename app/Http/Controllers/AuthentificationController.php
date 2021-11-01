@@ -29,13 +29,12 @@ class AuthentificationController extends Controller
 
             return redirect()->intended('admin/index');
         } else {
-            return back()->withErrors([
-                'email' => 'Email ou mot de passe incoorect',
-            ]);
+            return back()->withErrors(
+                'Les identifiants sont incorrects');
         }
     }
     /**
-     * Log the user out of the application.
+     * Log the user out of the applica tion.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
