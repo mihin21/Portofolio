@@ -73,7 +73,8 @@
                 @foreach ($aboutData as $Data)
                 <div class="about-img">
                     <div class="img-box">
-                        <img src="{{ asset('/assets/Picture'.'/'.$Data->picture_about) }}" alt="">
+                        {{-- <img src="{{ asset('/assets/Picture'.'/'.$Data->picture_about) }}" alt=""> --}}
+                        <img src="{{ asset('/assets/accueil_profil/profil.png') }}" alt="profil">
                     </div>
                 </div>
                 <div class="about-text">
