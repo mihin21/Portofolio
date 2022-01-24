@@ -15,7 +15,7 @@ class AuthentificationController extends Controller
      * Handle an login attempt.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response 
      */
     public function login(Request $request)
     {

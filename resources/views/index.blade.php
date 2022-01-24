@@ -28,7 +28,7 @@
               <div class="card">
                 <div class="card-body">
                   @foreach ($abouts as $about )
-                   <img src="{{ asset('https://mha-portfolio.herokuapp.com/assets/Picture'.'/'.$about->picture) }}" width="100%" height="300px" alt="">
+                   <img src="{{ asset('/assets/Picture'.'/'.$about->picture) }}" width="100%" height="300px" alt="">
                   @endforeach
 
                 </div>
